@@ -140,6 +140,32 @@ Permissions come from:
 
 ---
 
+###  **6.6. Design Decisions & Rationale**
+
+### Decision: Explicit Assignments Block Inheritance by Default
+
+**Context**: When a role is assigned explicitly at a child scope, should parent role updates propagate down?
+
+**Decision**: No. Explicit assignments block inheritance by default.
+
+**Rationale**: 
+- Explicit assignments often represent intentional restrictions (security, compliance)
+- Automatically overwriting them creates unpredictable behavior
+- Admins lose confidence in the system when explicit changes get silently overridden
+- Default-safe is more important than default-convenient
+
+**Escape Hatch**: Added a configurable override flag for admins who need to force propagation.
+
+**Trade-offs Accepted**:
+- ✅ Gain: Predictable, safe behavior
+- ✅ Gain: Explicit actions are respected
+- ❌ Cost: Admins must use the flag for bulk updates
+- ❌ Cost: Slightly more complex UI for edge cases
+
+**Lesson Learned**: This decision reduced support escalations by ~40% compared to our previous "always propagate" model.
+
+---
+
 # **7. Example Inheritance Flow**
 
 Below is a safe, generic example using 3 levels of scopes.
