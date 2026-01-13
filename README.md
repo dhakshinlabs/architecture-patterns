@@ -8,12 +8,16 @@ The patterns come from real-world design decisions and practical challenges, but
 
 ## Articles
 
+**Production-Validated Patterns** (Built and shipped):
+
 - [Designing a Multi-Tenant SaaS Platform Using Hierarchical Scopes](./articles/multi-tenant-hierarchical-scope-architecture.md)
 - [RBAC Scope Inheritance Model for Multi-Level Systems](./articles/rbac-scope-inheritance-model.md)
 - [Dynamic Field Engine and Extensible Views Architecture](./articles/dynamic-field-engine-and-views-architecture.md)
 - [Event Driven Architecture for SaaS Platforms](./articles/event-driven-architecture-for-saas-platforms.md)
-- [Designing a Multi-Tenant RAG Architecture Using Vector Databases](./articles/designing-a-multi-tenant-rag-architecture-using-vector-databases.md)
 - [Reversible vs Irreversible Decisions in SaaS Platforms](./articles/reversible-vs-irreversible-decisions-in-saas.md)
+
+**Research & Design Exploration** (Architected but not yet production-deployed):
+- [Designing a Multi-Tenant RAG Architecture Using Vector Databases](./articles/designing-a-multi-tenant-rag-architecture-using-vector-databases.md)
 
 ---
 
