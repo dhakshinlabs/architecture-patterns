@@ -26,3 +26,9 @@ The patterns come from real-world design decisions and practical challenges, but
 The goal of these articles is to document reusable architecture patterns that address real-world scaling challenges in distributed, multi-layered SaaS systems. The concepts are fully generic and can be applied to any platform that requires isolation, extensibility, configurability, or predictable behavior across scopes.
 
 All articles describe architectural design principles only. No product-specific terminology, logic, or implementation details are included.
+
+---
+
+## License
+
+This repository is licensed under the MIT License.
