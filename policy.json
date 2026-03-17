@@ -1,0 +1,6 @@
+{
+  "rules": {
+    "AP-DOC-002": "error",
+    "AP-ARCH-001": "error"
+  }
+}
